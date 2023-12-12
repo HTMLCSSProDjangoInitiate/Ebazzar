@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Detail</title>
+</head>
+
+    <style>
+      element.style{
+        overflow-y: scroll;
+      }
+      body{
+        background-color: Ivory;
+        
+      }
+      *{
+        margin:0;
+        padding: 1px;
+      }
+      
+        .btn{
+            cursor: pointer;
+    font-size: 16px;
+    padding: 10px 16px;
+    background-color:rgb(242, 244, 234);
+    color: black;
+  }
+  
+  .btn:hover{
+color:white;
+background-color:darkgreen;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    margin-top: -45px;
+    margin-right: 100px;
+    
+  }
+  
+  input[type="text"] {
+    background-color: whitesmoke;
+    border: 2px solid Ivory ;
+    
+    
+    font-size: 16px;
+    padding: 5px;
+    width: 500px;
+  }
+  .navbar{
+    background-color: rgb(17, 175, 243);
+    padding: 4px;
+  }
+  .photo{
+    border-radius: 50%;
+    height: 100px;
+    width:100px;
+  }
+  .box{
+    background-color: rgb(242, 244, 234);
+    display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr ;
+ column-gap: 5px;
+ border: 20px solid Ivory;
+ 
+ 
+  top: 50%;
+  left: 50%;
+  margin:0 auto;
+  padding: 20px;
+    width:70%;
+  }
+  .container{
+    padding: 40px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+  .text{
+    text-align: center;
+    margin-top: -40px;
+  }
+  .product-price {
+            color: orange;
+            font-size: 24px;
+            margin: 1px 0;
+        }
+
+        .product-original-price {
+            text-decoration: line-through;
+            color: rgb(70, 64, 64);
+        }
+
+        .product-discount {
+            font-size: 18px;
+            color: white;
+            background-color: rgb(226, 182, 99);
+            padding: 5px;
+           
+        }
+        .price-box {
+            text-align: center;
+            background-color: rgb(226, 182, 99);
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: black;
+        }
+        .product-container:hover{
+        transform: scale(1.1);
+        z-index: 1.5;
+      }
+        .discount {
+            font-size: 18px;
+            color: white;
+        }
+        .buynow{
+            cursor: pointer;
+    font-size: 16px;
+    padding: 10px 16px;
+    
+    display:inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    
+  }
+  .buynow:hover{
+color:white;
+background-color: darkgreen;
+  }
+  
+  
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 8px;
+    margin: auto ;
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color:    rgb(245, 138, 9);  
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: rgb(245, 138, 9);  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: rgb(245, 138, 9); 
+}
+.another{
+  padding: 30px;
+    margin:0 auto;
+    background:rgb(242, 244, 234);
+    width: 70%;
+    column-gap: 5px;
+ border: 5px solid rgb(242, 244, 234);
+ display: flex;
+
+}
+    .items{
+      text-align: center;
+      margin-right: 900px;
+    } 
+    .product-container{
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      border: 1px solid rgb(242, 244, 234);
+            border-radius: 5px ;
+    }
+    .img{
+    border-radius: 50%;
+ }
+ form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -45;
+    margin-top: -2px;
+    margin-right: 108px;
+    
+  }
+  
+  input[type="text"] {
+    background-color: whitesmoke;
+    border: 2px solid rgb(45, 42, 42);
+    
+    
+    font-size: 16px;
+    padding: 5px;
+    width: 563px;
+  }
+    .btn {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 17px 16px;
+  }
+  
+  .btn:hover{
+color:white;
+background-color: darkgreen;
+  }
+  nav {
+            background-color: rgb(17, 175, 243);
+            color: black;
+            text-align: right;
+            padding: 0px;
+           
+           
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        nav ul li {
+            display: inline;
+            margin-inline-end: 10px;
+            margin-right: 10px;
+            margin-left: 80px;
+            font-size: 21px;
+             /* Display links as a flex container */
+            text-align: right; /* Right-align the links */
+            
+            
+
+       
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            
+
+           
+        }
+        .link{
+        text-align: right;
+       margin-top: -86px;
+      }  
+
+        .logo {
+            text-align: left;
+                   
+        }
+        .america{
+            background-color: rgb(242, 244, 234);
+            height: 350px;
+            width:80%;
+            
+            align-items: center;
+            max-width: 1140px;
+            
+  margin: auto;
+        }
+        .japan{
+           
+            width:250px;
+            height:200px;
+            
+           
+            float:left;
+        }
+        .japan li a{
+            text-decoration: none;
+            
+            color:black;
+            font-size:18px;
+        }
+        .japan li{
+            list-style-type:none;
+            
+            margin: 4px;
+        }
+        .canada{
+           
+           width:300px;
+           height:200px;
+           
+          float:left;
+          
+           
+       }
+       .canada li a{
+            text-decoration: none;
+            
+            color:black;
+            font-size:18px;
+            
+        }
+        .canada li{
+            list-style-type:none;
+            text-align: start;
+            margin: 4px;
+        }
+        .per{
+           
+           width:200px;
+           height:200px;
+           float: right;
+           
+           
+       }
+       .per li a{
+           text-decoration: none;
+           
+           color:black;
+           font-size:18px;
+       }
+       .per li{
+           list-style-type:none;
+           
+           margin: 4px;
+       }
+       .load{
+        padding-top: 10px;
+        padding-bottom: 20px;
+       }
+       .loading{
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px 76px;
+      margin-left: 590px;
+        justify-content: center;
+        
+       }
+       .loading:hover{
+color:white;
+background-color: darkgreen;
+  }
+  .pathari{
+    background-color:rgb(242, 244, 234) ;
+  }
+    </style>
+   
+      <body>
+   <div class="navbar">
+        <nav>
+            <ul>
+               
+                
+
+                <div class="logo">
+                    
+                    <img class="img"src="logo3.jpg" height="100px" width="100px">
+                </div>
+                <div class="link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Services</a></li>
+                
+            </div>
+                <div class="topnav">
+                    <form >
+                        <input type="text" placeholder="search.." name="search">
+                        <button type="btn" id="submit" class="btn">Search</button>
+                    </form>
+                </div>
+                    
+            
+            </ul>
+        </nav>
+    </div>
+<div class="box">
+ 
+  <div class="container">
+    <img  src="shoes.webp"  height="350px" width="350px" >
+   
+  </div>
+  <div class="text">
+  <h1>Men's Sneaker</h1>
+
+  <div class="product-price">Rs. 998</div>
+  <div class="price">
+  <span class="original-price">Rs 4,999</span>
+  <span class="discount">-37%</span>
+  <p>Men's sneakers are the pinnacle of fashion and coziness combined. These adaptable shoes have you covered whether you're hitting the gym, taking a stroll through the city, or just keeping it casual. Men's sneakers are the ideal combination of stylish and practical footwear, coming in a variety of styles from the traditional to the cutting edge. These must-have sneakers will help you step up your game and step out in style.</p>
+</div>
+
+<div class="rate">
+  <input type="radio" id="star5" name="rate" value="5" />
+  <label for="star5" title="text">5 stars</label>
+  <input type="radio" id="star4" name="rate" value="4" />
+  <label for="star4" title="text">4 stars</label>
+  <input type="radio" id="star3" name="rate" value="3" />
+  <label for="star3" title="text">3 stars</label>
+  <input type="radio" id="star2" name="rate" value="2" />
+  <label for="star2" title="text">2 stars</label>
+  <input type="radio" id="star1" name="rate" value="1" />
+  <label for="star1" title="text">1 star</label>
+</div>
+
+ 
+
+
+
+<button type="buynow" id="submit" class="buynow">Buy Now</button>
+ 
+ 
+<button type="addcard" id="submit" class="buynow">Add to Card</button>
+
+
+</div>
+</div>
+
+<h1 class="items">Just for You</h1>
+<div class="another">
+<div class="product-container">
+  <div class="shoes">
+      <img src="shoes.webp" height="200px" width="200px">
+  </div>
+  <h2 class="product-title">Men's Sneaker</h2>
+  <div class="product-price">Rs. 998</div>
+<div class="price-box">
+<span class="original-price">Rs 4,999</span>
+<span class="discount">-37%</span>
+  
+
+</div>
+</div>
+
+<div class="product-container">
+  <div class="shoes">
+      <img src="shoes.webp" height="200px" width="200px">
+  </div>
+  <h2 class="product-title">Men's Sneaker</h2>
+  <div class="product-price">Rs. 998</div>
+<div class="price-box">
+<span class="original-price">Rs 4,999</span>
+<span class="discount">-37%</span>
+  
+</div>
+</div>
+<div class="product-container">
+  <div class="shoes">
+      <img src="shoes.webp" height="200px" width="200px">
+  </div>
+  <h2 class="product-title">Men's Sneaker</h2>
+  <div class="product-price">Rs. 998</div>
+<div class="price-box">
+<span class="original-price">Rs 4,999</span>
+<span class="discount">-37%</span>
+  
+</div>
+</div>
+<div class="product-container">
+  <div class="shoes">
+      <img src="shoes.webp" height="200px" width="200px">
+  </div>
+  <h2 class="product-title">Men's Sneaker</h2>
+  <div class="product-price">Rs. 998</div>
+<div class="price-box">
+<span class="original-price">Rs 4,999</span>
+<span class="discount">-37%</span>
+  
+</div>
+</div>
+<div class="product-container">
+  <div class="shoes">
+      <img src="shoes.webp" height="200px" width="200px">
+  </div>
+  <h2 class="product-title">Men's Sneaker</h2>
+  <div class="product-price">Rs. 998</div>
+<div class="price-box">
+<span class="original-price">Rs 4,999</span>
+<span class="discount">-37%</span>
+  
+</div>
+</div>
+
+
+
+</div>
+<div class="load">
+  <button type="loading" id="submit" class="loading">Load more</button>
+</div>
+</div>
+<div class="pathari">
+<div class="america">
+
+  <div class="japan">
+      <h2>Customer Services</h2>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Report abuse</a></li>
+          <li><a href="#">Open a Case</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+  </div>
+  <div class="canada">
+  <h2>Ebazzar</h2>
+  <li><a href="#">About Ebazzar</a></li>
+  <li><a href="#">Careers</a></li>
+  <li><a href="#">Ebazzar Blog</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  <li><a href="#">Privacy & Policies</a></li>
+  <li><a href="#">Digital Payment</a></li>
+  <li><a href="#">Review & Win</a></li>
+  <li><a href="#">Meet the Winners</a></li>
+  </div>
+  <div class="per">
+      <h2>Earn with Ebazzar</h2>
+      <li><a href="#">Sell on Ebazzar</a></li>
+      <li><a href="#">Code of Conduct</a></li>
+      
+      </div>
+      <div class="cash">
+          <h2>Payment Method</h2>
+          
+              <img src="delivary - Copy.jpg" height="50px" width="70px">
+              <img src="visa1.jpg" height="50px" width="70px">
+              <img src="mastercard.png" height="50px" width="70px">
+              <img src="esewa1.png" height="50px" width="70px">
+              <img src="imepay1.jpg" height="50px" width="70px">
+       
+          <div class="payment">
+              <h2>Follow us on</h2>
+              <a href="#" target="_blank">
+              <img src="fb.png" height="50px" width="70px">
+          </a>
+          <a href="#" target="_blank">
+              <img src="tiktok.avif" height="50px" width="70px">
+              </a>
+              <a href="#" target="_blank">
+              <img src="twiter.avif" height="50px" width="70px">
+              </a>
+              <a href="#" target="_blank">
+              <img src="insta.avif" height="50px" width="70px">
+              </a>
+              <a href="#" target="_blank">
+              <img src="youtube.png" height="50px" width="70px">
+              </a>
+          </div>
+          </div>
+      </div>
+</div>
+</div>
+</body>
+</html>

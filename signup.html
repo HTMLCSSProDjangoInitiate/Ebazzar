@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 30px solid Ivory;
+            border-radius: 5px;
+            background-color: rgb(242, 244, 234);
+        }
+        body{
+        background-color: Ivory;
+        
+      }
+        .form-group {
+            margin-bottom: 15px;
+            
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .terms-policy {
+            text-align: center;
+        }
+        .terms-policy a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 60px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-button {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .verification-methods {
+            
+            margin-top: 10px;
+            width: 95%;
+            justify-content: start;
+        }
+        .verification-methods a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .date-of-birth-group {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+        .date-of-birth-input {
+            flex: 1;
+        }
+    .password-group{
+        width:95%
+    }
+    .number{
+        width: 95%;;
+    }
+    .log{
+        text-align: right;
+        
+    }
+    .log a{
+        color: #007BFF;
+        text-decoration: none;
+    }
+    .bhandari {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -45;
+    margin-top: -2px;
+    margin-right: 108px;
+    
+  }
+  
+  input[type="orange"] {
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    
+    
+    font-size: 16px;
+    padding: 5px;
+    width: 563px;
+  }
+    .apple {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 17px 16px;
+  }
+  
+  .apple:hover{
+color:white;
+background-color: darkgreen;
+  }
+ .house{
+    border-radius: 50%;
+ }
+ .puja {
+            text-align: left;
+            
+        }
+      .umbrella{
+        text-align: right;
+       margin-top: -86px;
+      }  
+      nav {
+            background-color: rgb(17, 175, 243);
+            color: black;
+            text-align: right;
+            padding: 0px;
+            margin:-17px;
+           
+           
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        nav ul li {
+            display: inline;
+            margin-inline-end: 10px;
+            margin-right: 10px;
+            margin-left: 80px;
+            font-size: 21px;
+             
+            text-align: right;    
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+             }
+             .america{
+            background-color: rgb(242, 244, 234);;
+            height: 350px;
+            width:80%;
+            
+            align-items: center;
+            max-width: 1140px;
+             margin: auto;
+        }
+        .japan{
+           
+            width:250px;
+            height:200px;
+            
+           
+            float:left;
+        }
+        .japan li a{
+            text-decoration: none;
+            
+            color:black;
+            font-size:18px;
+        }
+        .japan li{
+            list-style-type:none;
+            
+            margin: 4px;
+        }
+        .canada{
+           
+           width:300px;
+           height:200px;
+           
+          float:left;
+          
+           
+       }
+       .canada li a{
+            text-decoration: none;
+            
+            color:black;
+            font-size:18px;
+            
+        }
+        .canada li{
+            list-style-type:none;
+            text-align: start;
+            margin: 4px;
+        }
+        .per{
+           
+           width:200px;
+           height:200px;
+           float: right;
+           
+           
+       }
+       .per li a{
+           text-decoration: none;
+           
+           color:black;
+           font-size:18px;
+       }
+       .per li{
+           list-style-type:none;
+           
+           margin: 4px;
+       }
+       .kathmandu{
+        background-color:rgb(242, 244, 234) ;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+               
+                
+
+                <div class="puja">
+                    
+                    <img class="house"src="logo3.jpg" height="100px" width="100px">
+                </div>
+                <div class="umbrella">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Services</a></li>
+                
+            </div>
+                <div class="topnav">
+                    <form class="bhandari">
+                        <input type="orange" placeholder="search..">
+                        <button type="apple" id="submit" class="apple">Search</button>
+                    </form>
+                </div>
+                    
+            
+            </ul>
+        </nav>
+    <div class="container">
+        <div class="log">
+        <p>Already member? please <a href="index.html"> login </a> here</p>
+    </div>
+    <h1>Sign Up</h1>
+        <h3 >Please fill the form to create your Ebazzar Account</h3>
+        
+        
+        <form class="group">
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="number">
+                <input type="tel" id="phone" placeholder="Enter your phone number" name="phone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="verification">Verification Code from Sms</label>
+                <div class="verification-methods">
+                    <input type="text" id="verification" placeholder="Enter your verification code" name="verification" required>
+                    <div class="lion">
+                   <a href="#">Get code via other method</a>
+                </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-group">
+                <input type="password" id="password" placeholder="Password" name="password" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth (YYYY/MM/DD)</label>
+                <div class="date-of-birth-group">
+                    <input type="text" id="date-of-birth" name="date-of-birth" class="date-of-birth-input" placeholder="Year/Month/Day" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button class="button" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="terms-policy">
+            <p>By signing up, you agree to our <a href="#">Terms</a> &<a href="#">Privacy Policy</a>.</p>
+        </div>
+        <div class="social-buttons">
+            <a href="#" target="_blank">
+            <img src="fb1.jpg" width="170px">
+        </a>
+        <a href="#" target="_blank">
+            <img src="google1.png" width="150px">
+           </a>
+        </div>
+    </div>
+    <div class="kathmandu">
+        <div class="america">
+            <div class="japan">
+                <h2>Customer Services</h2>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Report abuse</a></li>
+                    <li><a href="#">Open a Case</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+            </div>
+            <div class="canada">
+            <h2>Ebazzar</h2>
+            <li><a href="#">About Ebazzar</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Ebazzar Blog</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy & Policies</a></li>
+            <li><a href="#">Digital Payment</a></li>
+            <li><a href="#">Review & Win</a></li>
+            <li><a href="#">Meet the Winners</a></li>
+            </div>
+            <div class="per">
+                <h2>Earn with Ebazzar</h2>
+                <li><a href="#">Sell on Ebazzar</a></li>
+                <li><a href="#">Code of Conduct</a></li>
+                
+                </div>
+                <div class="cash">
+                    <h2>Payment Method</h2>
+                    
+                        <img src="delivary - Copy.jpg" height="50px" width="70px">
+                        <img src="visa1.jpg" height="50px" width="70px">
+                        <img src="mastercard.png" height="50px" width="70px">
+                        <img src="esewa1.png" height="50px" width="70px">
+                        <img src="imepay1.jpg" height="50px" width="70px">
+                 
+                    <div class="payment">
+                        <h2>Follow us on</h2>
+                        <a href="#" target="_blank">
+                        <img src="fb.png" height="50px" width="70px">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="tiktok.avif" height="50px" width="70px">
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="twiter.avif" height="50px" width="70px">
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="insta.avif" height="50px" width="70px">
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="youtube.png" height="50px" width="70px">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
